@@ -9,7 +9,7 @@ public class Employee {
 	void salary() {
 		System.out.println("Salary: "+salary);
 	}
-	void salary(int a) {
+	void salary(int a) {				// Overloading
 		if(age>50)
 			System.out.println("Eligible for bonus");
 		else
@@ -18,14 +18,15 @@ public class Employee {
 }
 
 class Engineer extends Employee{
-	void salary() {
+	void salary() {						// Overriding
 		System.out.println("Name: "+empName);
+		super.salary();					//Super class calling
 	}
 	public static void main(String arg[]) {
 		Engineer e = new Engineer();
 		e.salary();
-		e.salary(e.age);
 		Employee em = new Employee();
-		em.salary();
+		System.out.println("Age: "+em.age);
+		e.salary(e.age);
 	}
 }
