@@ -52,3 +52,22 @@ As a part of Java 8, In functional interface we can implement Default and Static
 Stream API:
 ...........
 Streaming: it is transfer of data from source to destination with out being modified or persisted.
+A Stream in JAVA 8 can be defined as the sequence of elements from a source to destination.
+Streams supports aggregate operations on the data returned from collections, arrays, I/O operations.
+Stream does not store the elements.
+It simply performs the aggregate operations to get the desired stream of data.
+Aggregate operations that we perform on the collection, array or any other data source do not change the data of the source, they simply return a new stream.
+
+
+forEach():
+..........
+This method is to Iterate over collections and streams in JAVA.
+We can also use method reference in the forEach method.
+Stream forEach() method performs an action for each element of the stream.
+Input to the forEach() method is consumer which is Functional Interface.
+Using forEach() method we will Iterate through all elements and print to console using lambda expression as well as method reference.
+
+
+Collectors class:
+.................
+Collectors is a final class that extends the object class which provided reduction operations, such as accumulationg elements into collections,summerizing elements according to various criteria, grouping etc
