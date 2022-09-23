@@ -1,1 +1,54 @@
+JAVA 8 Features.
+.................
 
+1) Lambda Expression
+2) Method References
+3) Stream API
+4) Default Methods
+5) Functional Interface
+6) Optional Class
+7) Static Methods
+8) ForEach()
+9) Collectors Class
+10) JDBC enhancement etc...
+
+
+LAMBDA EXPRESSION:
+..................
+Lambda exp was introduced to favour the functional interface and method referances. It looks like as though it's a functional code.
+A lambda expression is a short block of code which takes in parameters and returns a value.
+Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+Lambda expression contains mainly 3 sections.
+  a) () : Paramaters..(Which can be empty or null)
+  b) -> : Lambda Expression symbol
+  c) () : Body
+
+
+Functional Interface:
+.....................
+Functional interface are the interface which exactly has only ONE ABSTRACT METHOD.
+
+
+Method Reference:
+.................
+Method reference is used to point/refer to the functional interface method.
+Types of Method Reference:
+  a) Reference to a Static method.
+  b) Reference to a Instance method.
+  c) Reference to a Constructor.
+
+
+Optional:
+.........
+Optional is a class newly introduced as a part of java 8. It is used to deal with NullPointerException.
+
+
+Default and Static Methods:
+...........................
+In older Java interface we cannot declare a function which cannot be defined in the implemented class.
+As a part of Java 8, In functional interface we can implement Default and Static method in it, which can be later overriden.
+
+
+Stream API:
+...........
+Streaming: it is transfer of data from source to destination with out being modified or persisted.
