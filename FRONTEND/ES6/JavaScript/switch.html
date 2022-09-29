@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function switchFn(){
+		switch(document.getElementById("c").value){
+		case 'Red':{
+			document.write("Red");
+			break;
+		}
+		case 'Blue':{
+			document.write("Blue");
+			break;
+		}
+		case 'Green':{
+			document.write("Green");
+			break;
+		}
+		default:{
+			document.write("No color");
+			break;
+		}
+		}
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="c">
+	<button onclick="switchFn()">check</button>
+</body>
+</html>
