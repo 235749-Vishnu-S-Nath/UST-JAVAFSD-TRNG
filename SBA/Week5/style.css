@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+	background-color: #530053;
+}
+
+.container{
+	position :relative;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	padding-left: 38%;
+}
+
+.heading{
+	margin-left:2%;
+	color: #fbf52f;
+}
+
+.button{
+	position: absolute;
+	color:#ffff59;
+	margin-left:5%;
+	font-size: 2em;
+	border: none;
+	border-radius:40px;
+	background-color: #840084;
+	transition: box-shadow 0.1s;
+}
+.button:hover {
+    background-color: #FFFF00;
+    color: #530053;
+    box-shadow: 0 0 5px #FFFF00,
+                0 0 10px #FFFF00,
+                0 0 25px #FFFF00,
+                0 0 50px #FFFF00;
+}
