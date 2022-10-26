@@ -34,22 +34,49 @@ class User{
 }
 
 class UserBO{
-    public User getUsers(){
-        User[] obj = new User(1,"Louise","rxfsuzA2345"),new User(2,"Messie","hpphmf1:"),new User(3,"Steve","opefKt"),new User(4,"Kallis","23456778"),new User(5,"Wipro","A$%");
+    public User[] getUsers(){
+        User[] obj = new User[]{new User(1,"Louis","rxfsuzA2345"),new User(2,"Messie","hpphmf1:"),new User(3,"Steve","opefKt"),new User(4,"Kallis","23456778"),new User(5,"Wipro","A$%")};
         return obj;
     }
     private String encryptPassword(String password){
         String Enc="";
+        int ascii;
         for(char c:password.toCharArray()){
-            System.out.print(c);
+            ascii=(int)c;
+            ascii++;
+            c=(char)ascii;
+            Enc=Enc+c;
         }
-        return password;
+        return Enc;
+    }
+    boolean validate(String username,String password){
+        User[] u = getUser();
+        int flag = 0;
+        for(int i=0;i<u.length;i++){
+            if(username.equals(u[i].getUsername())){
+                if(password.equals(u[i].getPassword())){
+                    flag = 1;
+                }
+            }
+        }
+        if(flag=1)
+            return true;
+        else
+            return false;
     }
 }
 
 class Main{
-    UserBO ub = new UserBO();
-    User u = ub.getUsers();
-    System.out.println(ub.encryptPassword("Vishnu"));
-    
+    public static void main(String args[]){
+        String uname,pass;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Username:");
+        uname=sc.nextLine();
+        System.out.println("Password:");
+        pass=sc.nextLine();
+        
+        UserBO ub = new UserBO();
+        boolean result = ub.validate(uname,pass);
+        System.out.println(result);
+    }
 }
