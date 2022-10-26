@@ -1,3 +1,5 @@
+package com.codingPractice;
+
 import java.util.*;
 import java.lang.*;
 
@@ -50,23 +52,24 @@ class UserBO{
         return Enc;
     }
     boolean validate(String username,String password){
-        User[] u = getUser();
+        User[] u = getUsers();
         int flag = 0;
+        String Enp = encryptPassword(password);
         for(int i=0;i<u.length;i++){
             if(username.equals(u[i].getUsername())){
-                if(password.equals(u[i].getPassword())){
+                if(Enp.equals(u[i].getPassword())){
                     flag = 1;
                 }
             }
         }
-        if(flag=1)
+        if(flag==1)
             return true;
         else
             return false;
     }
 }
 
-class Main{
+class Coding1{
     public static void main(String args[]){
         String uname,pass;
         Scanner sc = new Scanner(System.in);
@@ -77,6 +80,11 @@ class Main{
         
         UserBO ub = new UserBO();
         boolean result = ub.validate(uname,pass);
-        System.out.println(result);
+        if(result == true) {
+        	System.out.println("Login Successfull");
+        }
+        else {
+        	System.out.println("Incorrect username/password");
+        }
     }
 }
