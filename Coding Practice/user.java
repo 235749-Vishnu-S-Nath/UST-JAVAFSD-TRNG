@@ -34,7 +34,13 @@ class User{
 }
 
 class UserBO{
-    
+    public User getUsers(){
+        User[] obj = new User[100];
+        return obj;
+    }
+    private String encryptPassword(String password){
+        
+    }
 }
 
 class Main{
