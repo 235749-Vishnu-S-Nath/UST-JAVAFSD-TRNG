@@ -4,7 +4,7 @@ public class AnimalProtectedInhe2 {
 	protected String name;
 	
 	protected void display() {
-		System.out.println("I am an animal.");
+		System.out.println("I am an animal 12.");
 	}
 }
 
