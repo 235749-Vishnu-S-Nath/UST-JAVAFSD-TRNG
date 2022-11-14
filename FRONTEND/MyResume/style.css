@@ -1,0 +1,67 @@
+.container{
+    margin-top: 50px;
+    
+}
+.contactMeHeading{
+    margin-top: 3em;
+    font-weight: 900;
+    background-color: rgb(214, 234, 252);
+    font-family: sans-serif;
+    border-radius: 30px;
+}
+.picture{
+    margin-top: 20px;
+}
+.progress{
+    margin: 10px;
+}
+.skillHeading{
+    background-color: rgb(214, 234, 252);
+    font-family: sans-serif;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    border-radius: 30px;
+    margin-top: .5em;
+    font-weight: 900;
+}
+.aboutMeHeading{
+    background-color: rgb(214, 234, 252);
+    font-family: sans-serif;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    border-radius: 30px;
+    margin-top: .5em;
+    font-weight: 900;
+}
+.aboutContent{
+    margin-left: 1em;
+}
+.certificationHeading{
+    background-color: rgb(214, 234, 252);
+    font-family: sans-serif;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    border-radius: 30px;
+    margin-top: .5em;
+    font-weight: 900;
+}
+.linksHeading{
+    background-color: rgb(214, 234, 252);
+    font-family: sans-serif;
+    
+    margin-left: .5em;
+    border-radius: 30px;
+    margin-top: .5em;
+    font-weight: 900;
+}
+.innerContainer{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.linkContent{
+    margin: 10px;
+}
+h6{
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
